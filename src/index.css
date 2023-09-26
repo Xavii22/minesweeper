@@ -1,0 +1,22 @@
+body {
+  background-color: #e6ffe6;
+  font-family: 'Ubuntu Mono', Helvetica, Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-container {
+  display: flex;
+  gap: 20px;
+}
+
+.list {
+  background-color: lightblue;
+  min-width: 200px;
+  padding: 5px 15px 10px 15px;
+  border-radius: 10px;
+}

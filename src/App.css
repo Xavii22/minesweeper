@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    margin: 1rem;
+    text-align: center;
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    outline: 3px solid black;
+    border-radius: 5px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    outline: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-buried {
+    background-color: #c0dc74;
+}
+
+.cell-unburied {
+    background-color: #e8c49c;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    gap: 10px;
+    align-items: center;
+}
+
+button {
+    min-height: 40px;
+    min-width: 140px;
+    border-radius: 10px;
+    background-color: #d6e699;
+    cursor: pointer;
+}
+
+.result-visible {
+    visibility: visible;
+}
